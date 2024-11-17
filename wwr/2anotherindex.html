@@ -3,9 +3,145 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Whitewater Rafting</title>
+    <style>
+        html {
+            background: url('images/mypback.jpg') no-repeat center center fixed;
+            background-size: cover;
+            width: 100%;
+            height: 100%;
+        }
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+        header {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgba(132, 132, 132, 0.5);
+            padding: 10px;
+            font-size: 1.2em;
+        }
+        .logo {
+            border-radius: 50%;
+            width: 50px;
+            margin-right: 20px;
+        }
+        nav {
+            display: flex;
+            gap: 20px;
+        }
+        nav a {
+            text-decoration: none;
+            color: white;
+        }
+        main {
+            display: flex;
+            flex: 1;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+        }
+        .usa {
+            position: relative;
+            width: 100%;
+            max-width: 1200px; /* Adjust max-width to ensure it fits within the page */
+        }
+        .usa img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        .river-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        .river-overlay img {
+            position: absolute;
+            width: 10%;
+            box-shadow: 2px 2px 5px rgb(0, 0, 0);
+        }
+        /* Example positions for river images */
+        .river1 { top: 45%; left: 19%; }
+        .river2 { top: 50%; left: 40%; }
+        .river3 { top: 20%; left: 60%; }
+        .river4 { top: 20%; left: 40%; }
+        .river5 {top: 20%;left: 80%;}
+
+        footer {
+            background-color: rgba(132, 132, 132, 0.5);
+            padding: 10px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            text-align: left;
+            font-size: 1.1em;
+        }
+        .lower_text {
+            padding: 10px 0;
+            color: white;
+            font-size: 1.2em;
+        }
+        .social {
+            display: flex;
+            gap: 10px;
+        }
+        .social img {
+            width: 30px;
+            height: auto;
+        }
+    </style>
 </head>
 <body>
-    
+    <header>
+        <a id="logo_link" href="anotherindex.html">
+            <img class="logo" src="images/Designer.jpg" alt="White Cap Logo">
+        </a>
+        <nav>
+            <a href="anotherindex.html">Home</a>
+            <a href="2anotherindex.html">Locations</a>
+            <a href="site-plan-rafting.html">Site Plan</a>
+            <a href="contactus.html">Contact Us</a>
+        </nav>
+    </header>
+    <main>
+        <div class="usa">
+            <img src="images/usa-physical.jpg" alt="Map Of Our Locations">
+            <div class="river-overlay">
+                <img src="images/river1.jpg" alt="River 1" class="river1">
+                <img src="images/river2.jpg" alt="River 2" class="river2">
+                <img src="images/river3.jpg" alt="River 3" class="river3">
+                <img src="images/river4.jpg" alt="River 4" class="river4">
+                <img src="images/river5.jpg" alt="River 4" class="river5">
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="lower_text">
+            <p>White Cap &copy; 2024 - Luke Woodland</p>
+        </div>
+        <p><a href="site-plan-rafting.html">Site Plan</a></p>
+        <p><a href="contactus.html">Contact Us</a></p>
+        <div class="social">
+            <a href="https://facebook.com">
+                <img src="images/facebook.png" alt="fb icon">
+            </a>
+            <a href="https://twitter.com">
+                <img src="images/twitter.png" alt="twitter icon">
+            </a>
+            <a href="https://instagram.com">
+                <img src="images/instagram.png" alt="instagram icon">
+            </a>
+        </div>
+    </footer>
 </body>
 </html>
