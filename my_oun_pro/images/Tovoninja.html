@@ -12,20 +12,22 @@
         background: url(mypback.jpg)no-repeat center center fixed;
         background-size: cover;
         width: 100%;
-        height: 100%;
+        
     }
     body, html {
         margin: 0;
         padding: 0;
         font-family: Arial, Helvetica, sans-serif;
+        height: 75%;
     }
     
-    /*Has to do with heading stuff logo ect*/
+   
     header {
         width: 100%;
         margin: 0;
         padding: 0;
         position: relative;
+        z-index: 1;
     }
     header img {
         width: 100%;
@@ -35,10 +37,11 @@
         z-index: 1;
         margin-top: -40%;
         filter: contrast(150%) brightness(90%) blur (2px);
+        z-index: 1;
     }
 
-    /*futer nav bar for somehing*/
-    nav {
+    
+    /* nav {
         background-color: rgba(132, 132, 132, 0.5);
         width: 100%;
         padding: 5px 0;
@@ -46,14 +49,18 @@
         border-radius: 5px;
         box-shadow: rgba(0, 0, 0, 0.851);
         margin-top: 25%;
+        z-index: 1;
+        cursor: pointer;
         
     }
-    nav a {
+     nav a {
         margin: 0 40px;
         text-decoration: none;
         color: white;
+        z-index: 2;
+        cursor: pointer;
         
-    }
+    }  */
 
     /*everything to do with the video scroller*/
     .video-scroller {
@@ -80,6 +87,7 @@
     .video-text-container {
         text-align: center;
         margin-top: 20px;
+        flex: 1;
     }
     .video-text {
         display: none; /* Initially hidden */
@@ -95,7 +103,7 @@
         margin: 0 auto; /* Center the text container */
         border-radius: 5px;
         color: #ddd;
-        text-outline:0 0 10px rgba(0, 0, 0, 0.851);
+        
     }
     .show-text-btn{
         margin-top: 5px;
@@ -106,6 +114,28 @@
         cursor: pointer;
         border-radius: 5px;
     }
+
+    .discord img{
+        width: 30px;
+        height: auto;
+    }
+    
+    .container { display: flex; flex-direction: column; min-height: 100vh; flex: 1; /* Full viewport height */ } 
+    
+    .content { flex: 1; /* Take up available space */}
+
+
+    .footer {
+    background-color: rgba(193, 193, 193, 0.504);
+    padding: 20px;
+    text-align: right;
+    margin-top: 75%;
+    }
+    
+
+
+
+
 </style>
 </head>
 <script>
@@ -123,10 +153,10 @@
         <img src="removed_back.png" alt="Tovoninja Banner">
     </header>
     <nav>
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#videos">Videos</a>
-        <a href="#ideas">Your Ideas</a>
+        <a src="gaymin.html">Home</a>
+        <a href="gaymin.html">About</a>
+        <a href="about.html">Videos</a>
+        <a href="about.html">Your Ideas</a>
     </nav>
     <div class="video-scroller">
         <div>
@@ -137,7 +167,10 @@
                 <p>The "BG Channel Trailer" video starts with the "Balisong Gods" logo, accompanied by free sounds from Apple's iMovie catalog. The main content consists of a series of images featuring the cast, set to more free sounds from Apple's iMovie catalog. The video ends with a movie-like scrolling cast list, showcasing the names and roles of those involved. 
                 </p>
                 <h3>What was learned during the making of this video</h3>
+                <p>This video was the first one that I actually edited. Being inexperienced, the editing was not necessarily good, but it was definitely a good step. It was also one of the first times I had become more acquainted with photo editing software.
+                </p>
                 <h3>What could have been done better</h3>
+                <p>"The main thing that I could have done better had to do with my understanding of audio. I threw random sounds together that I thought would sound cool. Being the first time, I made a lot of interesting creative decisions. It's understandable to feel, when you're beginning something, that you should try to implement everything. If anything, the most important thing when it comes to video editing is that simpler is often better.</p>
                        
               </div>
             <button class="show-text-btn" onclick="showText(1)">Learn More</button>
@@ -193,9 +226,14 @@
             <p class="video-text" id="text10">10</p>
             <button class="show-text-btn" onclick="showText(10)">Learn More</button>
         </div>
-    </div>
-    <div class="video-text-container">
-        <div id="text-container"></div>
-    </div>
-</body>
+        </div>
+        <div class="video-text-container">
+            <div id="text-container"></div>
+        </div>
+        <footer class="footer">
+            <div class ="discord">
+                <img src="channels4_profile.jpg" alt="Discord Logo">
+            </div>
+        </footer>
+    </body>
 </html>
