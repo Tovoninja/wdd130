@@ -4,236 +4,277 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tovoninja</title>
-</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
 <style>
+    /* Html and body for general stuff */
+html {
+    background: url(mypback.jpg) no-repeat center center fixed;
+    background-size: cover;
+    width: 100%;
+}
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 75%;
+}
+header {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    z-index: 1;
+    margin-top: 300px;
+    text-align: center;
+    margin-top: 50px;
     
-    /*Html and body for general stuff*/
-    html{
-        background: url(mypback.jpg)no-repeat center center fixed;
-        background-size: cover;
-        width: 100%;
-        
-    }
-    body, html {
-        margin: 0;
-        padding: 0;
-        font-family: Arial, Helvetica, sans-serif;
-        height: 75%;
-    }
     
-   
-    header {
-        width: 100%;
-        margin: 0;
-        padding: 0;
-        position: relative;
-        z-index: 1;
-    }
-    header img {
-        width: 100%;
-        display: block;
-        position: absolute;
-        top: 0px;
-        z-index: 1;
-        margin-top: -40%;
-        filter: contrast(150%) brightness(90%) blur (2px);
-        z-index: 1;
-    }
-
+}
+header img {
+    width: 100%;
+    display: block;
+    position: relative;
+    top: 0px;
+    z-index: 1;
+    margin-top: -250px;
+    filter: contrast(150%) brightness(90%);
+    z-index: 1;
+    max-width: 1000px;
+    align-items: center;
+    margin: 0 auto;
     
-    /* nav {
-        background-color: rgba(132, 132, 132, 0.5);
-        width: 100%;
-        padding: 5px 0;
-        text-align: center;
-        border-radius: 5px;
-        box-shadow: rgba(0, 0, 0, 0.851);
-        margin-top: 25%;
-        z-index: 1;
-        cursor: pointer;
-        
-    }
-     nav a {
-        margin: 0 40px;
-        text-decoration: none;
-        color: white;
-        z-index: 2;
-        cursor: pointer;
-        
-    }  */
 
-    /*everything to do with the video scroller*/
-    .video-scroller {
-        display: flex;
-        overflow-x: auto;
-        padding: 10px 0;
-        background-color: rgba(132, 132, 132, .5);
-        margin-top: 75px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.851);
-    }
-    .video-scroller div {
-        flex: none;
-        background-color: transparent;
-        width: 300px;
-        text-align: center;
-        margin: 0 10px;
-        padding: 0;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-    }
-    .video-scroller iframe {
-        width: 100%;
-        display: block;
-    }
-    .video-text-container {
-        text-align: center;
-        margin-top: 20px;
-        flex: 1;
-    }
-    .video-text {
-        display: none; /* Initially hidden */
-        text-align: left;
-        margin-top: 100px;
-        padding: 10px;
-        border: 1px solid #ddd;
-        background-color: rgba(120, 120, 120, .75);
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.851);
-        font-size: 14px;
-        line-height: 1.6;
-        width: 80%; /* Adjust width as needed */
-        margin: 0 auto; /* Center the text container */
-        border-radius: 5px;
-        color: #ddd;
-        
-    }
-    .show-text-btn{
-        margin-top: 5px;
-        padding: 5px 10px;
-        background-color: rgb(255, 166, 0);
-        color: white;
-        border: none;
-        cursor: pointer;
-        border-radius: 5px;
-    }
+}
+nav {
+    background-color: rgba(132, 132, 132, 0.5);
+    width: 100%;
+    padding: 5px 0;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.851);
+    margin-top: 10px;
+    z-index: 1;
+    cursor: pointer;
+}
+nav a {
+    margin: 0 40px;
+    text-decoration: none;
+    color: white;
+    z-index: 2;
+    cursor: pointer;
+    font-size: 30px;
 
-    .discord img{
-        width: 30px;
-        height: auto;
-    }
-    
-    .container { display: flex; flex-direction: column; min-height: 100vh; flex: 1; /* Full viewport height */ } 
-    
-    .content { flex: 1; /* Take up available space */}
+}
 
+/* everything to do with the video scroller */
+.video-scroller {
+    display: flex;
+    overflow-x: auto;
+    padding: 10px 0;
+    background-color: rgba(132, 132, 132, .5);
+    margin-top: 75px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.851);
+}
+.video-scroller div {
+    flex: none;
+    background-color: transparent;
+    width: 300px;
+    text-align: center;
+    margin: 0 10px;
+    padding: 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+.video-scroller iframe {
+    width: 100%;
+    display: block;
+}
+.video-text-container {
+    text-align: center;
+    margin-top: 20px;
+    flex: 1;
+}
+.video-text {
+    display: none; /* Initially hidden */
+    text-align: left;
+    margin-top: 100px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    background-color: rgba(120, 120, 120, .75);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.851);
+    font-size: 14px;
+    line-height: 1.6;
+    width: 80%; /* Adjust width as needed */
+    margin: 0 auto; /* Center the text container */
+    border-radius: 5px;
+    color: #ddd;
+}
+.show-text-btn {
+    margin-top: 5px;
+    padding: 5px 10px;
+    background-color: rgb(255, 166, 0);
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
 
-    .footer {
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    flex: 1; /* Full viewport height */
+}
+.content {
+    flex: 1; /* Take up available space */
+}
+.footer {
     background-color: rgba(193, 193, 193, 0.504);
     padding: 20px;
-    text-align: right;
     margin-top: 75%;
-    }
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-items: center;
+
+}
+.site_plan{
+    font-size: 30px;
+    grid-column: 1/1;
+    align-items: center;
+    margin-top: -30px;
+    text-decoration: none;
     
-
-
-
-
+}
+.discord{
+    grid-column: 5/5;
+    align-items: center;
+    margin-top: 5px;
+}
+.discord img {
+    width: 30px;
+    height: auto;
+}
 </style>
-</head>
 <script>
     function showText(index) {
-        const textContainer = document.getElementById('text-container');
-        textContainer.innerHTML = ''; // Clear previous text
-        const videoText = document.getElementById(`text${index}`);
-        const clonedText = videoText.cloneNode(true); // Clone the text node
-        clonedText.style.display = 'block'; // Make it visible
-        textContainer.appendChild(clonedText); // Append to container
-    }
+    const textContainer = document.getElementById('text-container');
+    textContainer.innerHTML = ''; // Clear previous text
+    const videoText = document.getElementById(`text${index}`);
+    const clonedText = videoText.cloneNode(true); // Clone the text node
+    clonedText.style.display = 'block'; // Make it visible
+    textContainer.appendChild(clonedText); // Append to container
+}
+
 </script>
 <body>
     <header>
-        <img src="removed_back.png" alt="Tovoninja Banner">
+        <img src="ifixit.png" alt="Tovoninja Banner">
     </header>
     <nav>
-        <a src="gaymin.html">Home</a>
-        <a href="gaymin.html">About</a>
+        
+        <a href="Tovoninja.html">Home</a>
+        <a href="my_story.html">About</a>
         <a href="about.html">Videos</a>
         <a href="about.html">Your Ideas</a>
     </nav>
     <div class="video-scroller">
         <div>
             <iframe src="https://www.youtube.com/embed/O_4x000MYLs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-              <div class="video-text" id="text1">
+            <div class="video-text" id="text1">
                 <h1>BG Channel Trailer</h1>
                 <h3>AI Description</h3>
-                <p>The "BG Channel Trailer" video starts with the "Balisong Gods" logo, accompanied by free sounds from Apple's iMovie catalog. The main content consists of a series of images featuring the cast, set to more free sounds from Apple's iMovie catalog. The video ends with a movie-like scrolling cast list, showcasing the names and roles of those involved. 
-                </p>
+                <p>The "BG Channel Trailer" video starts with the "Balisong Gods" logo, accompanied by free sounds from Apple's iMovie catalog. The main content consists of a series of images featuring the cast, set to more free sounds from Apple's iMovie catalog. The video ends with a movie-like scrolling cast list, showcasing the names and roles of those involved.</p>
                 <h3>What was learned during the making of this video</h3>
-                <p>This video was the first one that I actually edited. Being inexperienced, the editing was not necessarily good, but it was definitely a good step. It was also one of the first times I had become more acquainted with photo editing software.
-                </p>
+                <p>This video was the first one that I actually edited. Being inexperienced, the editing was not necessarily good, but it was definitely a good step. It was also one of the first times I had become more acquainted with photo editing software.</p>
                 <h3>What could have been done better</h3>
-                <p>"The main thing that I could have done better had to do with my understanding of audio. I threw random sounds together that I thought would sound cool. Being the first time, I made a lot of interesting creative decisions. It's understandable to feel, when you're beginning something, that you should try to implement everything. If anything, the most important thing when it comes to video editing is that simpler is often better.</p>
-                       
-              </div>
+                <p>The main thing that I could have done better had to do with my understanding of audio. I threw random sounds together that I thought would sound cool. Being the first time, I made a lot of interesting creative decisions. It's understandable to feel, when you're beginning something, that you should try to implement everything. If anything, the most important thing when it comes to video editing is that simpler is often better.</p>
+            </div>
             <button class="show-text-btn" onclick="showText(1)">Learn More</button>
         </div>
         <div>
             <iframe src="https://www.youtube.com/embed/-FAJD6wk7ZM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             <div class="video-text" id="text2">
                 <h3>AI Description</h3>
-                <p>The 'History of the Balisong' video starts with the 'Balisong Gods' logo. The main content features a series of images and clips showcasing the evolution and craftsmanship of the balisong, accompanied by detailed narration explaining its history and significance. The video highlights key moments in the development of the balisong, drawing from thorough research, 
-                </p>
-                       
-              </div>
+                <p>The 'History of the Balisong' video starts with the 'Balisong Gods' logo. The main content features a series of images and clips showcasing the evolution and craftsmanship of the balisong, accompanied by detailed narration explaining its history and significance. The video highlights key moments in the development of the balisong, drawing from thorough research.</p>
+            </div>
             <button class="show-text-btn" onclick="showText(2)">Learn More</button>
-            </button> 
         </div>
         <div>
             <iframe src="https://www.youtube.com/embed/YByh2p7gY9Q" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <p class="video-text" id="text3">3</p>
+            <div class="video-text" id="text3">
+                <h3>AI Description</h3>
+                <p>Description of the third video content goes here.</p>
+            </div>
             <button class="show-text-btn" onclick="showText(3)">Learn More</button>
         </div>
         <div>
             <iframe src="https://www.youtube.com/embed/URTmOHBd2Es" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <p class="video-text" id="text4">4</p>
+            <div class="video-text" id="text4">
+                <h3>AI Description</h3>
+                <p>Description of the fourth video content goes here.</p>
+            </div>
             <button class="show-text-btn" onclick="showText(4)">Learn More</button>
         </div>
         <div>
             <iframe src="https://www.youtube.com/embed/4llF-217q9g" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <p class="video-text" id="text5">5</p>
+            <div class="video-text" id="text5">
+                <h3>AI Description</h3>
+                <p>Description of the fifth video content goes here.</p>
+            </div>
             <button class="show-text-btn" onclick="showText(5)">Learn More</button>
         </div>
         <div>
             <iframe src="https://www.youtube.com/embed/x2DtC__N18c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <p class="video-text" id="text6">6</p>
+            <div class="video-text" id="text6">
+                <h3>AI Description</h3>
+                <p>Description of the sixth video content goes here.</p>
+            </div>
             <button class="show-text-btn" onclick="showText(6)">Learn More</button>
         </div>
         <div>
             <iframe src="https://www.youtube.com/embed/8rhp_W4cHCk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <p class="video-text" id="text7">7</p>
+            <div class="video-text" id="text7">
+                <h3>AI Description</h3>
+                <p>Description of the seventh video content goes here.</p>
+            </div>
             <button class="show-text-btn" onclick="showText(7)">Learn More</button>
         </div>
         <div>
             <iframe src="https://www.youtube.com/embed/7rDbnVZP5y8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <p class="video-text" id="text8">8</p>
+            <div class="video-text" id="text8">
+                <h3>AI Description</h3>
+                <p>Description of the eighth video content goes here.</p>
+            </div>
             <button class="show-text-btn" onclick="showText(8)">Learn More</button>
         </div>
         <div>
             <iframe src="https://www.youtube.com/embed/OePEmlog84Y" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <p class="video-text" id="text9">9</p>
+            <div class="video-text" id="text9">
+                <h3>AI Description</h3>
+                <p>Description of the ninth video content goes here.</p>
+            </div>
             <button class="show-text-btn" onclick="showText(9)">Learn More</button>
         </div>
         <div>
             <iframe src="https://www.youtube.com/embed/85mlYRj9Jcs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <p class="video-text" id="text10">10</p>
+            <div class="video-text" id="text10">
+                <h3>AI Description</h3>
+                <p>Description of the tenth video content goes here.</p>
+            </div>
             <button class="show-text-btn" onclick="showText(10)">Learn More</button>
         </div>
+    </div>
+    <div class="video-text-container">
+        <div id="text-container"></div>
+    </div>
+    <footer class="footer">
+        <div class="discord">
+            <img src="channels4_profile.jpg" alt="Discord Logo">
         </div>
-        <div class="video-text-container">
-            <div id="text-container"></div>
+        <div class = site_plan>
+            <a href="https://tovoninja.github.io/wdd130/Finished/site_plan.html">My Site Plan</a>
         </div>
-        <footer class="footer">
-            <div class ="discord">
-                <img src="channels4_profile.jpg" alt="Discord Logo">
-            </div>
-        </footer>
-    </body>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
 </html>
