@@ -117,6 +117,33 @@ nav a {
     border: none;
     cursor: pointer;
     border-radius: 5px;
+    transition: all 0.5s;
+}
+
+.show-text-btn span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5;
+}
+
+.show-text-btn span:after{
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: 50px;
+    transition: 0.5s;
+}
+
+.show-text-btn:hover span {
+    padding-right: 15px;
+
+}
+
+.show-text-btn:hover span:after {
+  opacity: 1;
+  right: 0;
 }
 
 .container {
@@ -189,7 +216,7 @@ nav a {
                 <h3>What could have been done better</h3>
                 <p>The main thing that I could have done better had to do with my understanding of audio. I threw random sounds together that I thought would sound cool. Being the first time, I made a lot of interesting creative decisions. It's understandable to feel, when you're beginning something, that you should try to implement everything. If anything, the most important thing when it comes to video editing is that simpler is often better.</p>
             </div>
-            <button class="show-text-btn" onclick="showText(1)">Learn More</button>
+            <button class="show-text-btn" onclick="showText(1)"><span>Learn More</span></button>
         </div>
         <div>
             <iframe src="https://www.youtube.com/embed/-FAJD6wk7ZM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -197,7 +224,7 @@ nav a {
                 <h3>AI Description</h3>
                 <p>The 'History of the Balisong' video starts with the 'Balisong Gods' logo. The main content features a series of images and clips showcasing the evolution and craftsmanship of the balisong, accompanied by detailed narration explaining its history and significance. The video highlights key moments in the development of the balisong, drawing from thorough research.</p>
             </div>
-            <button class="show-text-btn" onclick="showText(2)">Learn More</button>
+            <button class="show-text-btn" onclick="showText(2)"><span>Learn More</span></button>
         </div>
         <div>
             <iframe src="https://www.youtube.com/embed/YByh2p7gY9Q" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -205,7 +232,7 @@ nav a {
                 <h3>AI Description</h3>
                 <p>Description of the third video content goes here.</p>
             </div>
-            <button class="show-text-btn" onclick="showText(3)">Learn More</button>
+            <button class="show-text-btn" onclick="showText(3)"><span>Learn More</span></button>
         </div>
         <div>
             <iframe src="https://www.youtube.com/embed/URTmOHBd2Es" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -213,7 +240,7 @@ nav a {
                 <h3>AI Description</h3>
                 <p>Description of the fourth video content goes here.</p>
             </div>
-            <button class="show-text-btn" onclick="showText(4)">Learn More</button>
+            <button class="show-text-btn" onclick="showText(4)"><span>Learn More</span></button>
         </div>
         <div>
             <iframe src="https://www.youtube.com/embed/4llF-217q9g" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -221,7 +248,7 @@ nav a {
                 <h3>AI Description</h3>
                 <p>Description of the fifth video content goes here.</p>
             </div>
-            <button class="show-text-btn" onclick="showText(5)">Learn More</button>
+            <button class="show-text-btn" onclick="showText(5)"><span>Learn More</span></button>
         </div>
         <div>
             <iframe src="https://www.youtube.com/embed/x2DtC__N18c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -229,7 +256,7 @@ nav a {
                 <h3>AI Description</h3>
                 <p>Description of the sixth video content goes here.</p>
             </div>
-            <button class="show-text-btn" onclick="showText(6)">Learn More</button>
+            <button class="show-text-btn" onclick="showText(6)"><span>Learn More</span></button>
         </div>
         <div>
             <iframe src="https://www.youtube.com/embed/8rhp_W4cHCk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -237,7 +264,7 @@ nav a {
                 <h3>AI Description</h3>
                 <p>Description of the seventh video content goes here.</p>
             </div>
-            <button class="show-text-btn" onclick="showText(7)">Learn More</button>
+            <button class="show-text-btn" onclick="showText(7)"><span>Learn More</span></button>
         </div>
         <div>
             <iframe src="https://www.youtube.com/embed/7rDbnVZP5y8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -245,7 +272,7 @@ nav a {
                 <h3>AI Description</h3>
                 <p>Description of the eighth video content goes here.</p>
             </div>
-            <button class="show-text-btn" onclick="showText(8)">Learn More</button>
+            <button class="show-text-btn" onclick="showText(8)"><span>Learn More</span></button>
         </div>
         <div>
             <iframe src="https://www.youtube.com/embed/OePEmlog84Y" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -253,7 +280,7 @@ nav a {
                 <h3>AI Description</h3>
                 <p>Description of the ninth video content goes here.</p>
             </div>
-            <button class="show-text-btn" onclick="showText(9)">Learn More</button>
+            <button class="show-text-btn" onclick="showText(9)"><span>Learn More</span></button>
         </div>
         <div>
             <iframe src="https://www.youtube.com/embed/85mlYRj9Jcs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -261,7 +288,7 @@ nav a {
                 <h3>AI Description</h3>
                 <p>Description of the tenth video content goes here.</p>
             </div>
-            <button class="show-text-btn" onclick="showText(10)">Learn More</button>
+            <button class="show-text-btn" onclick="showText(10)"><span>Learn More</span></button>
         </div>
     </div>
     <div class="video-text-container">
