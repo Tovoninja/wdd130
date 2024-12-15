@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Page - Tovoninja</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+html {
+    background: url(mypback.jpg) no-repeat center center fixed;
+    background-size: cover;
+    width: 100%;
+}
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 75%;
+}
+header {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    margin-top: 50px;
+}
+header img {
+    width: 100%;
+    display: block;
+    position: relative;
+    top: 0px;
+    z-index: 1;
+    margin-top: -250px;
+    filter: contrast(150%) brightness(90%);
+    z-index: 1;
+    max-width: 1000px;
+    align-items: center;
+    margin: 0 auto;
+}
+nav {
+    background-color: rgba(132, 132, 132, 0.5);
+    width: 100%;
+    padding: 5px 0;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.851);
+    margin-top: 10px;
+    z-index: 1;
+    cursor: pointer;
+}
+nav a {
+    margin: 0 40px;
+    text-decoration: none;
+    color: white;
+    z-index: 2;
+    cursor: pointer;
+    font-size: 30px;
+}
+
+/* everything to do with the video scroller */
+.video-scroller {
+    display: flex;
+    overflow-x: auto;
+    padding: 10px 0;
+    background-color: rgba(132, 132, 132, .5);
+    margin-top: 75px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.851);
+}
+.video-scroller div {
+    flex: none;
+    background-color: transparent;
+    width: 300px;
+    text-align: center;
+    margin: 0 10px;
+    padding: 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+.video-scroller iframe {
+    width: 100%;
+    display: block;
+}
+.content{
+    margin-top: 50px;
+}
+.about_me {
+    display: block;
+    text-align: left;
+    margin-top: 100px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    background-color: rgba(120, 120, 120, .75);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.851);
+    font-size: 14px;
+    line-height: 1.6;
+    width: 80%; /* Adjust width as needed */
+    margin: 0 auto; /* Center the text container */
+    border-radius: 5px;
+    color: #ddd;
+    margin-bottom: 20px;
+    height: 40%;
+}
+.show-text-btn {
+    margin-top: 5px;
+    padding: 5px 10px;
+    background-color: rgb(255, 166, 0);
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    flex: 1; /* Full viewport height */
+}
+.content {
+    flex: 1; /* Take up available space */
+    margin-bottom: -80%;
+}
+.footer {
+    background-color: rgba(193, 193, 193, 0.504);
+    padding: 20px;
+    margin-top: 86.19%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-items: center;
+}
+
+.discord{
+    grid-column: 5/5;
+    align-items: center;
+    margin-top: 5px;
+}
+.discord img {
+    width: 30px;
+    height: auto;
+
+}
+
+.about_me img{
+    width: 50%;
+    height: auto;
+}
+</style>
+
+<body>
+    <header>
+        <img src="ifixit.png" alt="Tovoninja Banner">
+    </header>
+    <nav>
+        <a href="Tovoninja.html">Home</a>
+        <a href="my_story.html">About</a>
+        <a href="videos.html">Videos</a>
+        <a href="ideas.html">Your Ideas</a>
+    </nav>
+    <div class="content">
+        <div class="about_me">
+            <h2>My Old Setup</h2>
+            <p>Here's a look at my old setup where I started my journey into video editing and content creation. It was basic but served as the foundation for my skills.</p>
+            <img src="old_setup.jpg" alt="Old Setup" class="setup-image">
+            <p>I used a 2013 Mac with free Photoshop software and iMovie. It had its limitations, but it taught me a lot about video editing and perseverance.</p>
+        </div>
+        <div class="about_me">
+            <h2>My New Setup</h2>
+            <p>As my channel grew, so did my setup. Here's a look at my current setup, which allows me to produce high-quality content more efficiently.</p>
+            <img src="new_setup.jpg" alt="New Setup" class="setup-image">
+            <p>With a new computer, advanced software, and better equipment, I've been able to enhance the quality of my videos and streamline my workflow.</p>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="discord">
+            <img src="channels4_profile.jpg" alt="Discord Logo">
+        </div>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>
