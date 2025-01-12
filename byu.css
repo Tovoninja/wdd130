@@ -1,0 +1,70 @@
+body {
+    font-size: 20px; /* Default font size */
+    font-family: "Times New Roman", serif; /* Default font family */
+    line-height: 1.6; /* Line height */
+    color: #333; /* Default color */
+    background-color: #fff; /* Background color */
+    margin: 0;
+}
+
+.content {
+    max-width: 600px; /* Maximum width for content inside the box */
+    margin: 20px auto; /* Centering elements and adding space */
+    padding: 100px; /* Adding space inside the element */
+    border: 1px solid #ccc; /* Border */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Box shadow */
+    background-color: #fff; /* Background color */
+}
+
+header.title {
+    font-size: 100px;
+    text-align: center; /* Centering title */
+    margin-bottom: 20px; /* Space below header */
+}
+
+h1 {
+    font-size: 50px; 
+    font-weight: bold; /* Making the font bold */
+    text-transform: uppercase; /* Making text all caps */
+    letter-spacing: 1px; /* Adding more space between letters */
+    margin-bottom: -10px;
+}
+
+h2 {
+    font-size: 18px; 
+    font-weight: bold; /* Making the font bold */
+    color: #006EB6; /* Subtitle color */
+    text-transform: uppercase; /* Making text all caps */
+    letter-spacing: 1px; /* Adding more space between letters */
+    border-bottom: 2px solid #000
+
+}
+
+p {
+    text-align: left; /* Left aligning paragraphs */
+}
+
+.does-list {
+    padding-left: 20px; /* Adding space inside the element */
+    margin-bottom: 15px; /* Space between list and below elements */
+}
+
+footer {
+    text-align: center; /* Centering footer text */
+    margin-top: 20px; /* Space above footer */
+}
+
+.logo {
+    width: 150px; /* Setting logo size */
+    height: auto; /* Keeping the aspect ratio */
+}
+
+.does-list {
+    margin-left: -20px; /* Adjusts the entire list to the left */
+    padding-left: 0; /* Removes default padding */
+}
+
+.does-list li {
+    margin-left: 65px; /* Adjusts list items to the left */
+    padding-left: 20px; /* Adds space between the numbers and the text */
+}
